@@ -1,8 +1,8 @@
-this tool will look like:
+This tool will look like:
 
 <img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/b018d125-b6f3-4698-a2b2-66a39928514c" />
 
-select a partition not starting with 0:
+Select a partition not starting with 0:
 
 <img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/4dac0ae2-8202-46c7-8e1d-b236d7b5d3dd" />
 
