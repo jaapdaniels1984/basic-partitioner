@@ -164,17 +164,18 @@ $Button.Add_Click({
 	$SelectedName = $SelectedName.Trim()
 	$SelectedVolume = $SelectedVolume.Trim()
 	Clear-Disk -Number $SelectedDisk -RemoveData -Confirm:$false
-	Initialize-Disk -Number $SelectedDisk -PartitionStyle $SelectedStyle
-	Get-Partition -DiskNumber $SelectedDisk -PartitionNumber $SelectedPartition | Set-Partition -NewDriveLetter $Letter
-	if ($checkbox.Checked)
+	Set-Disk $SelectedDisk -PartitionStyle $SelectedStyle
+	New-Partition -DiskNumber $SelectedDisk -UseMaximumSize | Format-Volume -FileSystem $SelectedFS -NewFileSystemLabel $Label
+	if (-not [String]::IsNullOrEmpty($SelectedLetter))
 	{
-		format /fs:$SelectedFS $SelectedDrive":" /Q /V:$Label
+		$SelectedLetter = $SelectedLetter.Substring(0,$SelectedLetter.Length-2)
+		Get-Partition -DiskNumber $SelectedDisk -PartitionNumber $SelectedPartition | Set-Partition -NewDriveLetter $SelectedLetter
 	}
 	else
 	{
-		format /fs:$SelectedFS $SelectedDrive":" /V:$Label
-	}
-	
+		$SelectedDrive = $SelectedDrive.Substring(0,$SelectedDrive.Length-2)
+		Get-Partition -DiskNumber $SelectedDisk -PartitionNumber $SelectedPartition | Set-Partition -NewDriveLetter $SelectedDrive
+	}	
 	$Button.Text = "Process"
 	$Button.Enabled = $true
 })
