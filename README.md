@@ -1,21 +1,23 @@
+This tool needs to be run as Admin
+
 This tool will look like:
 
-<img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/b018d125-b6f3-4698-a2b2-66a39928514c" />
+<img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/04110a37-57f6-4551-98ec-591552217190" />
 
 Select a partition not starting with 0:
 
-<img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/4dac0ae2-8202-46c7-8e1d-b236d7b5d3dd" />
+<img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/4efc799a-13b5-4e77-a4e7-38b400438a9a" />
 
 Select FileSystem like:
 
-<img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/262a026d-be8b-46b7-9147-6aca388a8958" />
+<img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/0ff3e81e-dbb1-460f-9bbe-2139462b73ca" />
 
 Select a FileSystem-Style like:
 
-<img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/d18f94b8-3026-4123-8bf4-af1656ecae47" />
+<img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/cc7352bc-79ed-420a-a675-fef75154e6f7" />
 
-Select a Drive Letter like:
+Optional select a Drive Letter like:
 
-<img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/0ee17c3c-7597-4837-b108-81df1533392f" />
+<img width="582" height="241" alt="afbeelding" src="https://github.com/user-attachments/assets/46938c40-8ed1-427a-a4c8-c5d28ae44c17" />
 
-Give it a nickname or use Quick format.
+Give it a Volume name.
